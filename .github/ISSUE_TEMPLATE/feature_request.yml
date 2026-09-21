@@ -1,0 +1,30 @@
+name: Feature request
+description: Propose an improvement to fairget
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Use case
+      description: What problem would this change solve, and for whom?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the smallest useful change to the public behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe any current workaround or alternative design.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evaluation considerations
+      description: For modeling changes, explain how fairness and utility should be evaluated.

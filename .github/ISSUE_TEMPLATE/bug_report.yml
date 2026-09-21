@@ -1,0 +1,52 @@
+name: Bug report
+description: Report reproducible incorrect behavior in fairget
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to report a problem.
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the behavior and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal example
+      description: Include the smallest code sample that reproduces the problem.
+      render: python
+    validations:
+      required: true
+  - type: input
+    id: fairget-version
+    attributes:
+      label: fairget version or commit
+      placeholder: v0.1.0
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Include your Python, PyTorch, and operating-system versions.
+      placeholder: Python 3.12, PyTorch 2.4, macOS 15
+    validations:
+      required: true
+  - type: textarea
+    id: traceback
+    attributes:
+      label: Error output
+      description: Paste the complete traceback or other relevant output.
+      render: shell
+  - type: checkboxes
+    id: data
+    attributes:
+      label: Data check
+      options:
+        - label: I removed private, sensitive, and restricted data from this report.
+          required: true
